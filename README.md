@@ -26,11 +26,14 @@ Functions implemented in this PPA were:
         - Value entered can contain the following printable characters: !$%*+-=?^_{|}~ but not: "(),:;<>@[\]` (this function provides a good opportunity to use regular expressions).
 
 ## Naming & Organizational Content
-Jest follows conventional naming for functions as typical JavaScript functions.
 
-Common unit tests were grouped
 
 ## Setup & Execution
+To begin, ensure that you have NodeJS and npm installed in your environment.
+ - NodeJS - download version 10.16.3 LTS, the recommended version for most users.
+ - npm - download version 6.11.3
+
+To execute the test suite, run `npm test` at the root project folder and Jest should begin running.
 
 ## Passing Test Screenshots
 
