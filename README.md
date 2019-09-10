@@ -1,4 +1,5 @@
 # Professional Practice Assignment #1
+## By Erin Yoo
 Intro to Unit Testing &amp; T/BDD
 
 ## Functions
@@ -26,7 +27,40 @@ Functions implemented in this PPA were:
         - Value entered can contain the following printable characters: !$%*+-=?^_{|}~ but not: "(),:;<>@[\]` (this function provides a good opportunity to use regular expressions).
 
 ## Naming & Organizational Content
+Given the JavaScript general language conventions, I followed general rules for naming variables. In addition, I attempted to name variables as descriptively as possible for future code readers.
 
+Given the Jest framework, I followed general conventions from the documentation provided. Grouping tests together using `describe` and using `it` for the sub-tests.
+
+The project folder is set up as such to help distinguish between the functions and the tests. They all are under the root folder as they're a part of the project.
+```
+ppa1 (root)
+|
+|____functions
+      |
+      |____bmi.js
+      |
+      |____emailverifier.js
+      |
+      |____retirement.js
+      |
+      |____shortestdistance.js
+|
+|____tests
+      |
+      |____bmi.test.js
+      |
+      |____emailverifier.test.js
+      |
+      |____retirement.test.js
+      |
+      |____shortestdistance.test.js
+|
+|____index.js
+|
+|____README.md
+|
+|____package.json
+```
 
 ## Setup
 To begin, ensure that you have NodeJS and npm installed in your environment.
@@ -44,8 +78,8 @@ To execute the program itself, at the root directory run `node index.js` and con
 
 To execute the test suite, run `npm test` at the root project folder and Jest should begin running with coverage.
 
-## Passing Test Screenshots
-
-## Test Coverage Report
+## Test Coverage & Tests Passing Report
+![testing](/ppa1/Test%20Coverage.PNG)
 
 ## General Experience
+Unit testing and TDD is different from typical coding you might perform during school projects. Testing is often seen as an afterthought. Working with unit tests and TDD I found myself coding more efficiently. By thinking about the tests first and the possibilities of failure in the function, I identified many edge cases and accounted for them while coding. It made me more aware of why each line of code was being written. It's definitely a practice that I find realistic, feasible, and helpful for a real coding environment. There may be some issues to unit testing and TDD as it's easy to MAKE the tests pass themselves. It's a very surface-level test which may give a false level of confidence.
