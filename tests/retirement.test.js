@@ -1,26 +1,22 @@
 const retirement = require('../functions/retirement');
 
-describe('calculates age which savings goal is met', function() {
+describe('calculates the age at which retirement is reached', function() {
+  
+  it('correctly returns -1 if user reaches age 100 before reaching goal', () => {
+    const age = 60;
+    const annualsalary = 20000;
+    const percentage = 30;
+    const goal = 600000000000;
+    expect(retirement(age, annualsalary, percentage, goal)).toBe(-1);
+  });
 
-	it('should return number indicating age goal is met', () => {
-	//Test
-	});
-
-	it('should indicate savings goal was not met', () => {
-	//Test
-	});
-
-	it('should only accept number for annual salary', () => {
-	//Test
-	});
-
-	it('should only accept number for age', () => {
-	//Test
-	});
-
-	it('should only accept number for percentage saved', () => {
-	//Test
-	});
+  it('correctly returns age which user reaches goal', () => {
+    const age = 20;
+    const annualsalary = 60000;
+    const percentage = 30;
+    const goal = 600000;
+    expect(retirement(age, annualsalary, percentage, goal)).toBe(45);
+  });
 });
 
 test('Jest framework runs correctly', () => {

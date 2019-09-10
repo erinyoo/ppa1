@@ -28,12 +28,21 @@ Functions implemented in this PPA were:
 ## Naming & Organizational Content
 
 
-## Setup & Execution
+## Setup
 To begin, ensure that you have NodeJS and npm installed in your environment.
- - NodeJS - download version 10.16.3 LTS, the recommended version for most users.
- - npm - download version 6.11.3
+ - [NodeJS](https://nodejs.org/en/) - download version 10.16.3 LTS, the recommended version for most users.
+ - [npm](https://www.npmjs.com/get-npm) - download version 6.11.3
 
-To execute the test suite, run `npm test` at the root project folder and Jest should begin running.
+If you already have NodeJS and npm installed in your environment, please ensure you have the correct versions listed above by running `node -v` and `npm -v`.
+
+If you do not have the correct version of Node, go [here](https://www.hostingadvice.com/how-to/update-node-js-latest-version/) to see a tutorial on installing a different version. To install a different version of npm, look at this [Github response](https://github.com/tj/n/issues/484).
+
+After installation of correct NodeJS and npm versions, proceed to the root directory of the project and run `npm i` to retrieve all necessary dependencies.
+
+## Execution
+To execute the program itself, at the root directory run `node index.js` and continue to answer the prompts on the console.
+
+To execute the test suite, run `npm test` at the root project folder and Jest should begin running with coverage.
 
 ## Passing Test Screenshots
 
